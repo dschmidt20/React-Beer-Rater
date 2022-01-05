@@ -24,7 +24,6 @@ body {
   box-shadow: 0px 0px 3px 4px #ce5f0448;
   margin: 100px;
   padding: 100px;
-  background-color: green;
 }
 
 .container {
@@ -36,25 +35,19 @@ body {
 .card {
   width: 70%;
   display: grid;
-  grid-template-rows: max-content 200px 1fr;
+  grid-template-rows: max-content 2fr;
   border-radius: 20px;
   box-shadow: 0px 0px 3px 4px #d7d7d7;
   padding: 30px;
   transition: 0.3s;
-  background-color: blue;
-}
-
-.card:hover {
-  box-shadow: 1px 8px 16px 4px #d7d7d7;
 }
 
 .card-details {
-  margin-bottom: 10px;
-  background-color: red;
+  margin-top: 15px;
 }
 
 .beer-name {
-  background-color: orange;
+  display: block;
 }
 
 .card img {
@@ -79,13 +72,21 @@ nav {
 }
 
 button {
-  background-color: #d4ccce;
   border-radius: 5px;
   padding: 4px 10px;
-  color: #fff;
-  font-weight: 550;
+  font-weight: 500;
   border: none;
   cursor: pointer;
+}
+
+.card-button {
+  margin-right: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  box-shadow: 0px 0px 5px 2px #d7d7d7;
 }
 
 p {
