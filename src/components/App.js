@@ -1,14 +1,27 @@
 import "../App.css";
-import React from "react";
-import MainBeerList from "./MainBeerList";
+import React, { useEffect, useState } from "react";
+import Header from './Header';
 import NavBar from "./NavBar";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
 import LikedBeerList from "./LikedBeerList";
 
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+const API = 'http://localhost:3001/beers/';
+
 function App() {
+  const [beers, setBeers] = useState([]);
+
+  useEffect(() => {
+    fetch(API)
+      .then(res => res.json())
+      .then(beerData => setBeers(beerData))
+  }, [])
+
   return (
-    <div className="App">
+    <div className="app">
+      <Header />
       <BrowserRouter>
         <NavBar />
         <Switch>
@@ -19,7 +32,7 @@ function App() {
             <BeerForm  />
           </Route>
           <Route exact path='/'> 
-            <MainBeerList  />
+            <MainBeerList beers={beers}  />
           </Route>
         </Switch>
       </BrowserRouter>

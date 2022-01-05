@@ -9,11 +9,13 @@ function NavBar() {
             >
                 Liked
             </NavLink>
+            <br/>
             <NavLink 
             to='/beerform'
             >
                 Add New Beer
             </NavLink>
+            <br/>
             <NavLink 
             to='/'
             >
