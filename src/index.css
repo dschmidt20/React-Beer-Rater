@@ -24,6 +24,7 @@ body {
   box-shadow: 0px 0px 3px 4px #ce5f0448;
   margin: 100px;
   padding: 100px;
+  background-color: green;
 }
 
 .container {
@@ -40,6 +41,7 @@ body {
   box-shadow: 0px 0px 3px 4px #d7d7d7;
   padding: 30px;
   transition: 0.3s;
+  background-color: blue;
 }
 
 .card:hover {
@@ -47,11 +49,12 @@ body {
 }
 
 .card-details {
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+  background-color: red;
 }
 
 .beer-name {
-  margin-top: 3px;
+  background-color: orange;
 }
 
 .card img {

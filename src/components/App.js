@@ -12,12 +12,29 @@ const API = 'http://localhost:3001/beers/';
 
 function App() {
   const [beers, setBeers] = useState([]);
+  const [updateBeers, setUpdateBeers] = useState([])
 
   useEffect(() => {
     fetch(API)
       .then(res => res.json())
       .then(beerData => setBeers(beerData))
-  }, [])
+  }, [updateBeers])
+
+  // add votes 
+  function handleVoteClick(id, votes) {
+    fetch((API + id), {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        votes: (votes + 1)
+      }),
+    })
+      .then(res => res.json())
+      // setUpdateBeers to trigger re-render with new vote
+      .then(setUpdateBeers([updateBeers]))
+  }
 
   return (
     <div className="app">
@@ -32,7 +49,10 @@ function App() {
             <BeerForm  />
           </Route>
           <Route exact path='/'> 
-            <MainBeerList beers={beers}  />
+            <MainBeerList 
+              beers={beers} 
+              handleVoteClick={handleVoteClick} 
+            />
           </Route>
         </Switch>
       </BrowserRouter>
