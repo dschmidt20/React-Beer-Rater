@@ -1,26 +1,26 @@
 {
-  "beer": [
+  "beers": [
     {
         "id": 1,
-        "category": ",Gueuze",
+        "category": "Gueuze",
         "name": ",Brouwerij Drie Fonteinen Oude Geuze",
         "image": "https://products1.imgix.drizly.com/ci-drie-fonteinen-oude-geuze-c44008592350e1bf.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
         "region": "Belgium",
         "abv": 6.5,
         "type": "Craft",
         "notes": "Earthy, Funky, Tart",
-        "rating": 5
+        "votes": 87
     },
     {
         "id": 2,
-        "category": ",IPA",
-        "name": ",New Belgium Sour IPA",
+        "category": "IPA",
+        "name": "New Belgium Sour IPA",
         "image": "https://products1.imgix.drizly.com/ci-sour-ipa-0e7622f50e71cc32.png?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
         "region": "United States",
         "abv": 7,
         "type": "Craft",
         "notes": "Hoppy, Smooth, Tropical",
-        "rating": 5
+        "votes": 95
     },
     {
         "id": 3,
@@ -31,7 +31,7 @@
         "abv": 7.9,
         "type": "Craft",
         "notes": "Fruity, Tart",
-        "rating": 5
+        "votes": 44
     },
     {
         "id": 4,
@@ -42,7 +42,7 @@
         "abv": 4.8,
         "type": "Craft",
         "notes": "Citrus, Flavored, Salty, Sour",
-        "rating": 3.7
+        "votes": 39
     },
     {
         "id": 5,
@@ -53,7 +53,7 @@
         "abv": 5.1,
         "type": "Craft",
         "notes": "Fruity, Tart, Funky",
-        "rating": 4.2
+        "votes": 46
     },
     {
         "id": 6,
@@ -64,7 +64,7 @@
         "abv": 7,
         "type": "Craft",
         "notes": "Tart, Salty, Citrus, Intense",
-        "rating": 4.6
+        "votes": 78
     },
     {
         "id": 7,
@@ -75,7 +75,7 @@
         "abv": 6,
         "type": "Craft",
         "notes": "Sour, Balanced, Supple, Intense",
-        "rating": 2
+        "votes": 76
     },
     {
         "id": 8,
@@ -86,7 +86,7 @@
         "abv": 6.4,
         "type": "Craft",
         "notes": "Candied Fruit, Tart, Dry",
-        "rating": 2.9
+        "votes": 29
     },
     {
         "id": 9,
@@ -97,7 +97,7 @@
         "abv": 5.5,
         "type": "Craft",
         "notes": "Sweet Fruit, Tart",
-        "rating": 4.5
+        "votes": 45
     },
     {
         "id": 10,
@@ -108,7 +108,7 @@
         "abv": 5.2,
         "type": "Craft",
         "notes": "Sweet, Sour, Oaky",
-        "rating": 4.1
+        "votes": 58
     },
     {
         "id": 11,
@@ -119,7 +119,7 @@
         "abv": 5.2,
         "type": "Craft",
         "notes": "Yeasty, Citrus, Spicy, Fresh",
-        "rating": 4.8
+        "votes": 44
     },
     {
         "id": 12,
@@ -130,7 +130,7 @@
         "abv": 4.5,
         "type": "Craft, Seasonal",
         "notes": "Bright, Cinnamon, Citrus, Crisp, Malty, Smooth",
-        "rating": 4.7
+        "votes": 85
     },
     {
         "id": 13,
@@ -141,7 +141,7 @@
         "abv": 4.5,
         "type": "Craft, Seasonal",
         "notes": "Bright, Cinnamon, Citrus, Crisp, Malty, Smooth",
-        "rating": 4.7
+        "votes": 63
     },
     {
         "id": 14,
@@ -152,7 +152,7 @@
         "abv": 4,
         "type": "Craft",
         "notes": "Bready, Citrus, Floral, Fresh, Fruity, Light, Nectarine, Sweet",
-        "rating": 4.4
+        "votes": 78
     },
     {
         "id": 15,
@@ -163,7 +163,7 @@
         "abv": 4.4,
         "type": "Craft, Seasonal",
         "notes": "Bready, Citrus, Floral, Fresh, Fruity, Light, Nectarine, Sweet",
-        "rating": 4.3
+        "votes": 59
     },
     {
         "id": 16,
@@ -174,7 +174,7 @@
         "abv": 5,
         "type": "Craft",
         "notes": "Crisp, Fruity, Citrus",
-        "rating": 3.2
+        "votes": 31
     },
     {
         "id": 17,
@@ -185,7 +185,7 @@
         "abv": 5.2,
         "type": "Craft",
         "notes": "Coffee, Mocha, Nutty",
-        "rating": 4.8
+        "votes": 22
     },
     {
         "id": 18,
@@ -196,7 +196,7 @@
         "abv": 5.9,
         "type": "Craft",
         "notes": "Coffee, Chocolate",
-        "rating": 4.4
+        "votes": 69
     },
     {
         "id": 19,
@@ -207,7 +207,7 @@
         "abv": 6.5,
         "type": "Craft",
         "notes": "Smokey, Robust",
-        "rating": 3.9
+        "votes": 84
     },
     {
         "id": 20,
@@ -218,7 +218,7 @@
         "abv": 10.5,
         "type": "Craft",
         "notes": "Bold, Chocolate, Dark Fruit, Roasted",
-        "rating": 4.7
+        "votes": 63
     },
     {
         "id": 21,
@@ -229,7 +229,7 @@
         "abv": 5.4,
         "type": "Craft",
         "notes": "Banana, Fresh, Fruity, Yeasty",
-        "rating": 4.8
+        "votes": 34
     },
     {
         "id": 22,
@@ -240,7 +240,7 @@
         "abv": 5.8,
         "type": "Craft",
         "notes": "Malty, Flowery, Medium",
-        "rating": 4.8
+        "votes": 56
     },
     {
         "id": 23,
@@ -251,7 +251,7 @@
         "abv": 5.4,
         "type": "Craft",
         "notes": "Banana, Nutty, Malty",
-        "rating": 4.2
+        "votes": 65
     },
     {
         "id": 24,
@@ -262,7 +262,7 @@
         "abv": 5.1,
         "type": "Craft",
         "notes": "Crisp, Dry, Grainy, Minerality",
-        "rating": 4.9
+        "votes": 84
     },
     {
         "id": 25,
@@ -273,7 +273,7 @@
         "abv": 5.35,
         "type": "Craft",
         "notes": "Bitter, Dry, Yeasty",
-        "rating": 4.3
+        "votes": 30
     }
   ]
 }
