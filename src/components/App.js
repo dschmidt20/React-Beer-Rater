@@ -36,6 +36,10 @@ function App() {
       .then(setUpdateBeers([updateBeers]))
   }
 
+  function handleAddBeer(newBeer) {
+    setBeers([...beers, newBeer]);
+  }
+
   return (
     <div className="app">
       <Header />
@@ -46,7 +50,7 @@ function App() {
             <LikedBeerList />
           </Route>
           <Route path="/beerform">
-            <BeerForm  />
+            <BeerForm onAddBeer={handleAddBeer} api={API}/>
           </Route>
           <Route exact path='/'> 
             <MainBeerList 

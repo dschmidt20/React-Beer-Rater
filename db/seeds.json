@@ -157,8 +157,8 @@
       {
           "id": 15,
           "category": "Hefeweizen",
-          "name": "Jackalope Lovebird Strawberry Raspberry Wheat",
-          "brewery": "",
+          "name": "Lovebird Strawberry Raspberry Wheat",
+          "brewery": "Jackalope",
           "image": "https://products0.imgix.drizly.com/ci-jackalope-love-bird-d47b902704ae5170.png?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
           "region": "Tennessee, United States",
           "abv": 4.4,
@@ -267,8 +267,8 @@
       {
           "id": 25,
           "category": "Pilsner",
-          "name": "Sts Pilsner",
-          "brewery": "Russian River Brewing Company",
+          "name": "STS Pils",
+          "brewery": "Russian River",
           "image": "https://products0.imgix.drizly.com/ci-russian-river-brewing-company-sts-pilsner-eb399ea5147bfd21.png?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
           "region": "Sonoma County, United States",
           "abv": 5.35,
@@ -277,5 +277,3 @@
       }
     ]
   }
-  
-  
