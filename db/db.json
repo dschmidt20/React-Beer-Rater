@@ -1,7 +1,9 @@
 {
-  "beer": [
+  "beers": [
     {
         "id": 1,
+        "category": "Gueuze",
+        "name": "Brouwerij Drie Fonteinen Oude Geuze",
         "category": "Gose",
         "name": "Oude Geuze",
         "brewery": "Brouwerij Drie Fonteinen",
@@ -9,17 +11,20 @@
         "region": "Belgium",
         "abv": 6.5,
         "notes": "Earthy, Funky, Tart",
+        "votes": 87,
         "favorites": 5
     },
     {
         "id": 2,
         "category": "IPA",
+        "name": "New Belgium Sour IPA",
         "name": "Sour IPA",
         "brewery": "New Belgium",
         "image": "https://products1.imgix.drizly.com/ci-sour-ipa-0e7622f50e71cc32.png?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
         "region": "United States",
         "abv": 7,
         "notes": "Hoppy, Smooth, Tropical",
+        "votes": 95,
         "favorites": 5
     },
     {
@@ -31,6 +36,7 @@
         "region": "Ohio, United States",
         "abv": 7.9,
         "notes": "Fruity, Tart",
+        "votes": 44,
         "favorites": 5
     },
     {
@@ -42,6 +48,7 @@
         "region": "Connecticut, United States",
         "abv": 4.8,
         "notes": "Citrus, Flavored, Salty, Sour",
+        "votes": 39,
         "favorites": 3
     },
     {
@@ -53,6 +60,7 @@
         "region": "Paso Robles, United States",
         "abv": 5.1,
         "notes": "Fruity, Tart, Funky",
+        "votes": 46,
         "favorites": 4
     },
     {
@@ -64,6 +72,7 @@
         "region": "Delaware, United States",
         "abv": 7,
         "notes": "Tart, Salty, Citrus, Intense",
+        "votes": 78,
         "favorites": 4
     },
     {
@@ -75,6 +84,7 @@
         "region": "Belgium",
         "abv": 6,
         "notes": "Sour, Balanced, Supple, Intense",
+        "votes": 76,
         "favorites": 2
     },
     {
@@ -86,6 +96,7 @@
         "region": "Maine, United States",
         "abv": 6.4,
         "notes": "Candied Fruit, Tart, Dry",
+        "votes": 29,
         "favorites": 2
     },
     {
@@ -97,6 +108,7 @@
         "region": "California, United States",
         "abv": 5.5,
         "notes": "Sweet Fruit, Tart",
+        "votes": 45,
         "favorites": 4
     },
     {
@@ -108,6 +120,7 @@
         "region": "Belgium",
         "abv": 5.2,
         "notes": "Sweet, Sour, Oaky",
+        "votes": 58,
         "favorites": 4
     },
     {
@@ -119,6 +132,19 @@
         "region": "Maine, United States",
         "abv": 5.2,
         "notes": "Yeasty, Citrus, Spicy, Fresh",
+        "votes": 44,
+        "favorites": 2
+    },
+    {
+        "id": 12,
+        "category": "Seasonal Beer",
+        "name": "Samuel Adams Cold Snap Seasonal Beer",
+        "image": "https://products0.imgix.drizly.com/ci-samuel-adams-seasonal-ec8945ab9cbf7319.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
+        "region": "Massachusetts, United States",
+        "abv": 4.5,
+        "type": "Craft, Seasonal",
+        "notes": "Bright, Cinnamon, Citrus, Crisp, Malty, Smooth",
+        "votes": 85,
         "favorites": 4
     },
     {
@@ -130,7 +156,8 @@
         "region": "San Diego, United States",
         "abv": 6.4,
         "notes": "Citrus, Pine",
-        "favorites": 69
+        "votes": 69,
+        "favorites": 5
     },
     {
         "id": 13,
@@ -141,6 +168,7 @@
         "region": "Massachusetts, United States",
         "abv": 4.5,
         "notes": "Bright, Cinnamon, Citrus, Crisp, Malty, Smooth",
+        "votes": 63,
         "favorites": 4
     },
     {
@@ -152,6 +180,7 @@
         "region": "Massachusetts, United States",
         "abv": 4,
         "notes": "Bready, Citrus, Floral, Fresh, Fruity, Light, Nectarine, Sweet",
+        "votes": 78,
         "favorites": 4
     },
     {
@@ -163,6 +192,7 @@
         "region": "Tennessee, United States",
         "abv": 4.4,
         "notes": "Bready, Citrus, Floral, Fresh, Fruity, Light, Nectarine, Sweet",
+        "votes": 59,
         "favorites": 4
     },
     {
@@ -174,6 +204,7 @@
         "region": "Maryland, United States",
         "abv": 5,
         "notes": "Crisp, Fruity, Citrus",
+        "votes": 31,
         "favorites": 3
     },
     {
@@ -185,6 +216,7 @@
         "region": "Oregon, United States",
         "abv": 5.2,
         "notes": "Coffee, Mocha, Nutty",
+        "votes": 22,
         "favorites": 4
     },
     {
@@ -196,6 +228,7 @@
         "region": "Vermont, United States",
         "abv": 5.9,
         "notes": "Coffee, Chocolate",
+        "votes": 69,
         "favorites": 4
     },
     {
@@ -207,6 +240,7 @@
         "region": "Alaska, United States",
         "abv": 6.5,
         "notes": "Smokey, Robust",
+        "votes": 84,
         "favorites": 3
     },
     {
@@ -218,6 +252,7 @@
         "region": "Michigan, United States",
         "abv": 10.5,
         "notes": "Bold, Chocolate, Dark Fruit, Roasted",
+        "votes": 63,
         "favorites": 4
     },
     {
@@ -229,6 +264,7 @@
         "region": "Germany",
         "abv": 5.4,
         "notes": "Banana, Fresh, Fruity, Yeasty",
+        "votes": 34,
         "favorites": 4
     },
     {
@@ -240,6 +276,7 @@
         "region": "Germany",
         "abv": 5.8,
         "notes": "Malty, Flowery, Medium",
+        "votes": 56,
         "favorites": 4
     },
     {
@@ -251,6 +288,7 @@
         "region": "Germany",
         "abv": 5.4,
         "notes": "Banana, Nutty, Malty",
+        "votes": 65,
         "favorites": 4
     },
     {
@@ -262,6 +300,7 @@
         "region": "Czech Republic",
         "abv": 5.1,
         "notes": "Crisp, Dry, Grainy, Minerality",
+        "votes": 84,
         "favorites": 4
     },
     {
@@ -273,6 +312,7 @@
         "region": "Sonoma County, United States",
         "abv": 5.35,
         "notes": "Bitter, Dry, Yeasty",
+        "votes": 30,
         "favorites": 4
     }
   ]
