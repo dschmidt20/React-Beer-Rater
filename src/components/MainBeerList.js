@@ -2,9 +2,9 @@ import React from 'react'
 
 function MainBeerList() {
     return (
-        <h2>
+        <h1 style={{float:'center'}}>
             Beer
-        </h2>
+        </h1>
     )
 }
 
