@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function BeerForm({ onAddBeer, api }) {
-    const [isChecked, setIsChecked] = useState(true);
+  // const [isChecked, setIsChecked] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
     brewery: "",
@@ -41,20 +41,32 @@ function BeerForm({ onAddBeer, api }) {
   return (
     <>
       <h1>Add New Beer!</h1>
-      <form>
+      <form className="beerForm" to='localhost.3000/thankyou'>
         <label>
-          Beer Name:
-          <input type="text" name="name" onChange={handleChange} value={formData.name} />
+          <input
+            type="text"
+            placeholder="Beer Name"
+            name="name"
+            onChange={handleChange}
+            value={formData.name}
+            required
+          />
         </label>
         <br />
         <label>
-          Brewery Name:
-          <input type="text" name="brewery" onChange={handleChange} value={formData.brewery} />
+          <input
+            type="text"
+            placeholder="Brewery Name"
+            name="brewery"
+            onChange={handleChange}
+            value={formData.brewery}
+            required
+          />
         </label>
         <br />
         <label>
-          Beer Type:
-          <select name='category' onChange={handleChange}>
+          Beer Type
+          <select name="category" onChange={handleChange}>
             <option value="blank">-Select One-</option>
             <option value="Stout">Stout</option>
             <option value="IPA">IPA</option>
@@ -71,30 +83,54 @@ function BeerForm({ onAddBeer, api }) {
         </label>
         <br />
         <label>
-          Image:
-          <input type="text" name="image" onChange={handleChange} value={formData.image} />
+          <input
+            type="text"
+            placeholder="Image"
+            name="image"
+            onChange={handleChange}
+            value={formData.image}
+            required
+          />
         </label>
         <br />
         <label>
-          ABV:
-          <input type="text" name="abv" onChange={handleChange} value={formData.abv} />
+          <input
+            type="number"
+            placeholder="ABV"
+            name="abv"
+            onChange={handleChange}
+            value={formData.abv}
+            required
+          />
         </label>
         <br />
         <label>
-          Region:
-          <input type="text" name="region" onChange={handleChange} value={formData.region} />
+          <input
+            type="text"
+            placeholder="Region"
+            name="region"
+            onChange={handleChange}
+            value={formData.region}
+            required
+          />
         </label>
         <br />
         <label>
-          Tasting Notes:
-          <input type="text" name="notes" onChange={handleChange} value={formData.notes} />
+          <input
+            type="text"
+            placeholder="Tasting Notes"
+            name="notes"
+            onChange={handleChange}
+            value={formData.notes}
+            required
+          />
         </label>
         <br />
-        <label>
+        {/* <label>
           Favorite?
           <input type="checkbox" name="favorite" value={isChecked} onChange={handleChange} />
-        </label>
-        <input type='submit' onClick={handleSubmit}></input>
+        </label> */}
+        <input type="submit" onClick={handleSubmit}></input>
       </form>
     </>
   );

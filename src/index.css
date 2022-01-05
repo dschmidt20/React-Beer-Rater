@@ -91,3 +91,18 @@ button {
 p {
   font-size: small;
 }
+.beerForm{
+  width: 20%;
+  float: center;
+  clear: both;
+  border-radius: 3px;
+  margin: auto;
+  padding: 10px;
+  background-color: brown;
+}
+input{
+  padding: 10px;
+  margin: 10px;
+  width: 75%;
+  align-items: center;
+}
