@@ -1,6 +1,7 @@
 import "../App.css";
 import React, { useEffect, useState } from "react";
 import MainBeerList from "./MainBeerList";
+import Featured from "./Featured";
 import BeerForm from "./BeerForm";
 import LikedBeerList from "./LikedBeerList";
 import FormSubmission from "./FormSubmission";
@@ -73,6 +74,7 @@ function App() {
           <Switch>
       <Layout>
         <Header style={{ background: "none" }}>Header</Header>
+        <Featured featured={featured} />
         <Layout>
           <Sider style={{ background: "none" }}>
             <Menu style={{ background: "none" }}  mode="inline">

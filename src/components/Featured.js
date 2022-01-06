@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Image } from "semantic-ui-react";
+import { Card, CardContent, CardDescription, CardHeader, Image, Popup, Rating } from "semantic-ui-react";
 
 const responsive = {
   desktop: {
@@ -13,8 +13,8 @@ const responsive = {
 
 const Featured = ({ featured }) => {
 
-    const images = featured.map(beer => beer.image);
-    const names = featured.map(beer => beer.name);
+    // const images = featured.map(beer => beer.image);
+    // const names = featured.map(beer => beer.name);
 
   return (
       <div className="featured-carousel">
@@ -22,20 +22,56 @@ const Featured = ({ featured }) => {
               <h4>The Best Beers</h4>
           </div>
         <Carousel
-            itemClass="image-item"
+            className="carousel"
             ssr={true}
             responsive={responsive}
             infinite={true}
             autoPlay={true}
             autoPlaySpeed={3000}
+            arrows={false}
             >
-            {images.slice(0, 5).map(image => {
+            {featured.slice(0, 5).map(beer => {
                 return (
-                <Image
-                    draggable={false}
-                    style={{ width: "100%", height: "100%", marginRight: '100px' }}
-                    src={image}
-                />
+                    <Popup
+                        trigger={
+                            <Card
+                                style={{ backgroundColor: 'white' }}
+                            >
+                                <Image
+                                    draggable={false}
+                                    style={{ width: "100%", height: "100%" }}
+                                    src={beer.image}
+                                />
+                                <CardHeader
+                                    style={{paddingTop: '7px', color: '#342404'}}
+                                >
+                                    <p>{beer.name}</p>
+                                </CardHeader>
+                                
+                            </Card>
+                        }
+                        style={{
+                            backgroundColor: 'white', 
+                            padding: '10px 10px', 
+                            borderRadius: '5px',
+                            margin: '8px',
+                        }}
+                    >
+                        <Popup.Header
+                            style={{color: '#342404'}}
+                        >
+                                Specifications</Popup.Header>
+                        <Popup.Content>
+                            <p
+                                style={{color: '#ce5e04'}}
+                            >
+                                {beer.category}<br/>
+                                {beer.region}<br/>
+                                {beer.abv}%<br/>
+                                {beer.votes}
+                            </p>
+                        </Popup.Content>
+                    </Popup>
                 );
             })}
         </Carousel>
