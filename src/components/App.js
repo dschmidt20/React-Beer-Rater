@@ -57,6 +57,8 @@ function App() {
     setFeatured([...featuredArray]);
   }
 
+  console.log(featured);
+
   function handleAddBeer(newBeer) {
     setBeers([...beers, newBeer]);
   }
