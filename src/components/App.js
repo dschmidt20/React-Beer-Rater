@@ -1,6 +1,7 @@
 import "../App.css";
 import React, { useEffect, useState } from "react";
 import MainBeerList from "./MainBeerList";
+import Featured from "./Featured";
 import BeerForm from "./BeerForm";
 import LikedBeerList from "./LikedBeerList";
 import FormSubmission from "./FormSubmission";
