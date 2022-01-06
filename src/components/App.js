@@ -1,7 +1,5 @@
 import "../App.css";
 import React, { useEffect, useState } from "react";
-import NavBar from "./NavBar";
-import Featured from "./Featured";
 import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
 import LikedBeerList from "./LikedBeerList";
@@ -9,7 +7,7 @@ import FormSubmission from "./FormSubmission";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Layout } from "antd";
 import { Menu } from 'antd';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { AppstoreOutlined } from '@ant-design/icons';
 import { NavLink } from "react-router-dom";
 
 
@@ -60,12 +58,10 @@ function App() {
 
     let avg = count / (beers.length - 1);
 
-    const featuredArray = beers.filter((beer) => beer.votes > avg + avg / 4);
+    const featuredArray = beers.filter(beer => beer.votes > (avg + (avg/5)));
 
     setFeatured([...featuredArray]);
   }
-
-  console.log(featured);
 
   function handleAddBeer(newBeer) {
     setBeers([...beers, newBeer]);
