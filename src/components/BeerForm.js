@@ -55,7 +55,7 @@ function BeerForm({ onAddBeer, api }) {
             name="name"
             onChange={handleChange}
             value={formData.name}
-            required
+            required={true}
             />
         </label>
             

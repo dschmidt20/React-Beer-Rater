@@ -97,7 +97,8 @@
           "region": "California, United States",
           "abv": 5.5,
           "notes": "Sweet Fruit, Tart",
-          "votes": 45
+          "votes": 45,
+          "hannah": 1
       },
       {
           "id": 10,
@@ -130,7 +131,8 @@
           "region": "San Diego, United States",
           "abv": 6.4,
           "notes": "Citrus, Pine",
-          "votes": 69
+          "votes": 69,
+          "daniel": 1
       },
       {
           "id": 13,

@@ -17,7 +17,7 @@ const Featured = ({ featured }) => {
     const names = featured.map(beer => beer.name);
 
   return (
-      <div className="featured-carousel">
+      <div style={{display: window.location.pathname === '/beerform' || window.location.pathname === '/thanks' ? 'none' : 'block'}} className="featured-carousel">
           <div id='featured-header'>
               <h4>The Best Beers</h4>
           </div>

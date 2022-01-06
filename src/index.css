@@ -171,3 +171,7 @@ h5 {
   border-radius: 0;
   box-shadow: none;
 }
+.group{
+  width: 450px;
+  margin: auto;
+}
