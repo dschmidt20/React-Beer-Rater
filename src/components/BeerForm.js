@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function BeerForm({ onAddBeer, api }) {
   // const [isChecked, setIsChecked] = useState(true);
@@ -36,11 +37,16 @@ function BeerForm({ onAddBeer, api }) {
     })
       .then((r) => r.json())
       .then(onAddBeer);
+      window.location.pathname = '/thanks'
   }
 
+  const history = useHistory()
+  console.log(history)
+
   return (
-    <>
+    <div>
       <h1>Add New Beer!</h1>
+      <div className="formHolder">
       <form className="beerForm" to='localhost.3000/thankyou'>
         <label>
           <input
@@ -50,8 +56,9 @@ function BeerForm({ onAddBeer, api }) {
             onChange={handleChange}
             value={formData.name}
             required
-          />
+            />
         </label>
+            
         <br />
         <label>
           <input
@@ -61,7 +68,7 @@ function BeerForm({ onAddBeer, api }) {
             onChange={handleChange}
             value={formData.brewery}
             required
-          />
+            />
         </label>
         <br />
         <label>
@@ -90,7 +97,7 @@ function BeerForm({ onAddBeer, api }) {
             onChange={handleChange}
             value={formData.image}
             required
-          />
+            />
         </label>
         <br />
         <label>
@@ -101,7 +108,7 @@ function BeerForm({ onAddBeer, api }) {
             onChange={handleChange}
             value={formData.abv}
             required
-          />
+            />
         </label>
         <br />
         <label>
@@ -112,7 +119,7 @@ function BeerForm({ onAddBeer, api }) {
             onChange={handleChange}
             value={formData.region}
             required
-          />
+            />
         </label>
         <br />
         <label>
@@ -123,7 +130,7 @@ function BeerForm({ onAddBeer, api }) {
             onChange={handleChange}
             value={formData.notes}
             required
-          />
+            />
         </label>
         <br />
         {/* <label>
@@ -132,7 +139,8 @@ function BeerForm({ onAddBeer, api }) {
         </label> */}
         <input type="submit" onClick={handleSubmit}></input>
       </form>
-    </>
+        </div>
+    </div>
   );
 }
 

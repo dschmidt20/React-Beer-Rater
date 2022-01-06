@@ -12,7 +12,7 @@ function BeerCard({ beer, handleVoteClick }) {
             <div className="card">
                 <img src={image} alt={name} />
                     <div className='beer-name'>
-                        <h4>{name} <br/> {brewery}</h4>
+                        <h4>{name}</h4> <br/><h5>{brewery}</h5>
                     </div>
                 <div className='card-btns'>
                     <button style={{float: 'left'}}

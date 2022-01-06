@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
 import LikedBeerList from "./LikedBeerList";
+import FormSubmission from "./FormSubmission";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -52,6 +53,7 @@ function App() {
           <Route path="/beerform">
             <BeerForm onAddBeer={handleAddBeer} api={API}/>
           </Route>
+          <Route path='/thanks' component={FormSubmission}/>
           <Route exact path='/'> 
             <MainBeerList 
               beers={beers} 
