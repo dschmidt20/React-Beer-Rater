@@ -140,10 +140,9 @@ function App() {
                 </Route>
               </Content>
             </Layout>
-            {window.location.pathname !== "/danielsfavs" ||
-              window.location.pathname !== "/hannahsfavs" && (
-                <Featured featured={featured} />
-              )}
+            {window.location.pathname === "/danielsfavs" ||
+              window.location.pathname === "/hannahsfavs" ? <Featured featured={featured}  /> : null
+              }
             <Footer>Created by Daniel and Hannah 2022</Footer>
           </Layout>
         </Switch>
