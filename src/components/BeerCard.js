@@ -17,16 +17,18 @@ function BeerCard({ beer, handleVoteClick }) {
                 <div className='card-btns'>
                     <button style={{float: 'left'}}
                         className="card-button" 
-                        id={id} vote={votes} 
+                        id={id} 
+                        vote={votes} 
                         onClick={() => handleVoteClick(id, votes)}
                     >Vote</button>
                     <button style={{float: 'right'}}
                         className="card-button" 
-                        id={id} vote={votes} 
+                        id={id} 
+                        vote={votes} 
                         onClick={() => setDetailsToggle(!detailsToggle)}
                     >{detailsToggle ? <VscChevronUp/> : <VscChevronDown/>}</button>
                 </div>
-                <div style={{display: detailsToggle ? 'block' : 'none'}}className='card-details'>
+                <div style={{display: detailsToggle ? 'block' : 'none'}} className='card-details'>
                     <h4 style={{textDecoration: 'overline'}}>Specifications</h4>
                     <p>Category: {category} </p>
                     <p>Region: {region}</p>
