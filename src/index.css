@@ -46,6 +46,7 @@ body {
 .card-details {
   margin-top: 25px;
   margin-bottom: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .beer-name {
@@ -146,4 +147,12 @@ h5 {
   box-shadow: 0px 0px 3px 4px #ce5f0448;
   margin: 100px;
   padding: 100px;
+}
+.ant-menu-sub.ant-menu-inline {
+  padding: 0;
+  background: #fafafa;
+  border: 0;
+  width: fit-content;
+  border-radius: 0;
+  box-shadow: none;
 }

@@ -4,20 +4,22 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
     // console.log(window.location.pathname)
   return (
-    <nav style={{float:'right'}}>
+    <nav>
      {/* { window.location.pathname === '/likedbeers' ? null :  */}
-         <button>
+        
         <NavLink to="/likedbeers">Liked</NavLink>
-      </button>
+        <br/>
+      
     {/* }  */}
-      <button>
+     
 
       <NavLink to="/beerform">Add New Beer</NavLink>
-      </button>
-      <button>
+      <br/>
+      
+     
 
       <NavLink to="/">Home</NavLink>
-      </button>
+      <br/>
     </nav>
   );
 }
