@@ -29,7 +29,7 @@ const Featured = ({ featured }) => {
             autoPlay={true}
             autoPlaySpeed={3000}
             arrows={false}
-            >
+        >
             {featured.slice(0, 5).map(beer => {
                 return (
                     <Popup
@@ -71,7 +71,7 @@ const Featured = ({ featured }) => {
                                 {beer.category}<br/>
                                 {beer.region}<br/>
                                 {beer.abv}%<br/>
-                                {beer.votes}
+                                {beer.votes} votes
                             </p>
                         </Popup.Content>
                     </Popup>
