@@ -57,8 +57,8 @@
       },
       {
           "id": 6,
-          "category": "Gose",
-          "name": "SeaQuench Ale Session Sour Beer",
+          "category": "Gose/Sour Beer",
+          "name": "SeaQuench Ale Session",
           "brewery": "Dogfish Head",
           "image": "https://products1.imgix.drizly.com/ci-dogfish-head-seaquench-ale-c7056bf271c9a4bd.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
           "region": "Delaware, United States",
@@ -159,7 +159,7 @@
       {
           "id": 15,
           "category": "Hefeweizen",
-          "name": "Lovebird Strawberry Raspberry Wheat",
+          "name": "Lovebird Wheat",
           "brewery": "Jackalope",
           "image": "https://products0.imgix.drizly.com/ci-jackalope-love-bird-d47b902704ae5170.png?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
           "region": "Tennessee, United States",

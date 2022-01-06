@@ -35,7 +35,7 @@ body {
 .beerList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 30px;
   border-radius: 30px;
   box-shadow: 0px 0px 3px 4px #ce5f0448;
   margin-top: 100px;
@@ -74,7 +74,7 @@ body {
 .card img {
   width: 100%;
   object-fit: cover;
-  height: 200px;
+  height: 300px;
 }
 
 /* .header {
@@ -100,7 +100,6 @@ button {
   font-weight: 500;
   border: none;
   cursor: pointer;
-  background-color: #ce5f0448;
 }
 
 .card-button {

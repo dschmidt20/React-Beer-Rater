@@ -35,7 +35,10 @@ const Featured = ({ featured }) => {
                     <Popup
                         trigger={
                             <Card
-                                style={{ backgroundColor: 'white' }}
+                                style={{ 
+                                    backgroundColor: 'white',
+                                    width: '250px',
+                                }}
                             >
                                 <Image
                                     draggable={false}
