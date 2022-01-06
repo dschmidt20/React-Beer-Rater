@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Card, Button, Icon, Image } from 'semantic-ui-react'
 import { VscChevronDown, VscChevronUp } from 'react-icons/vsc';
 
 function BeerCard({ beer, handleVoteClick }) {
@@ -9,33 +10,50 @@ function BeerCard({ beer, handleVoteClick }) {
 
     return (
         <div className="container">
-            <div className="card">
+            <Card
+                style={{
+                    backgroundColor: 'white',
+                    width: '250px',
+                }}
+            >
                 <img src={image} alt={name} />
-                    <div className='beer-name'>
-                        <h4>{name}</h4> <br/><h5>{brewery}</h5>
-                    </div>
-                <div className='card-btns'>
-                    <button style={{float: 'left'}}
-                        className="card-button" 
+                <Card.Content>
+                    <Card.Header
+                        style={{
+                            marginTop: '15px'
+                        }}
+                    >{name}</Card.Header>
+                <Card.Meta
+                    style={{
+                        marginBottom: '15px'
+                    }}
+                >{brewery}</Card.Meta>
+                    <Button
+                        style={{float: 'left'}}
                         id={id} 
                         vote={votes} 
                         onClick={() => handleVoteClick(id, votes)}
-                    >Vote</button>
-                    <button style={{float: 'right'}}
-                        className="card-button" 
+                    >Vote</Button>
+                    <Button 
+                        style={{float: 'right'}} 
                         id={id} 
                         vote={votes} 
                         onClick={() => setDetailsToggle(!detailsToggle)}
-                    >{detailsToggle ? <VscChevronUp/> : <VscChevronDown/>}</button>
-                </div>
-                <div style={{display: detailsToggle ? 'block' : 'none'}} className='card-details'>
-                    <h4 style={{textDecoration: 'overline'}}>Specifications</h4>
+                    >{detailsToggle ? <VscChevronUp/> : <VscChevronDown/>}</Button>
+                </Card.Content>
+
+                <Card.Content 
+                    extra 
+                    style={{display: detailsToggle ? 'block' : 'none'}}    
+                >
+                    <h4 style={{textDecoration: 'overline', marginTop: '25px'}}>Specifications</h4>
                     <p>Category: {category} </p>
                     <p>Region: {region}</p>
                     <p>ABV: {abv}%</p>
+                    <p>Notes: {notes}</p>
                     <p>Votes: {votes}</p>
-                </div>
-            </div>
+                </Card.Content>
+            </Card>
         </div>
     )
 }
