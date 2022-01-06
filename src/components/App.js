@@ -52,12 +52,10 @@ function App() {
 
     let avg = count / (beers.length - 1);
 
-    const featuredArray = beers.filter(beer => beer.votes > (avg + (avg/4)));
+    const featuredArray = beers.filter(beer => beer.votes > (avg + (avg/5)));
 
     setFeatured([...featuredArray]);
   }
-
-  console.log(featured);
 
   function handleAddBeer(newBeer) {
     setBeers([...beers, newBeer]);
