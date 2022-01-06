@@ -2,6 +2,7 @@ import "../App.css";
 import React, { useEffect, useState } from "react";
 import Header from './Header';
 import NavBar from "./NavBar";
+import Featured from "./Featured";
 import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
 import LikedBeerList from "./LikedBeerList";
@@ -13,13 +14,18 @@ const API = 'http://localhost:3001/beers/';
 
 function App() {
   const [beers, setBeers] = useState([]);
-  const [updateBeers, setUpdateBeers] = useState([])
+  const [updateBeers, setUpdateBeers] = useState([]);
+  const [featured, setFeatured] = useState([]);
 
   useEffect(() => {
     fetch(API)
       .then(res => res.json())
       .then(beerData => setBeers(beerData))
   }, [updateBeers])
+
+  useEffect(() => {
+    handleFeatured();
+  }, [beers])
 
   // add votes 
   function handleVoteClick(id, votes) {
@@ -37,6 +43,20 @@ function App() {
       .then(setUpdateBeers([updateBeers]))
   }
 
+  function handleFeatured() {
+    let count = 0;
+
+    for (let i = 0; i < beers.length - 1; i++) {
+      count += beers[i].votes;
+    }
+
+    let avg = count / (beers.length - 1);
+
+    const featuredArray = beers.filter(beer => beer.votes > (avg + (avg/4)));
+
+    setFeatured([...featuredArray]);
+  }
+
   function handleAddBeer(newBeer) {
     setBeers([...beers, newBeer]);
   }
@@ -44,6 +64,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <Featured featured={featured} />
       <BrowserRouter>
         <NavBar />
         <Switch>
