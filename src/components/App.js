@@ -1,7 +1,6 @@
 import "../App.css";
 import React, { useEffect, useState } from "react";
 import MainBeerList from "./MainBeerList";
-import Featured from "./Featured";
 import BeerForm from "./BeerForm";
 import LikedBeerList from "./LikedBeerList";
 import FormSubmission from "./FormSubmission";
@@ -87,7 +86,7 @@ function App() {
           <Layout>
             <Header style={{ background: "none" }}>Header</Header>
             {window.location.pathname === "/danielsfavs" ||
-            window.location.pathname === "hannahsfavs" ? (
+            window.location.pathname === "/hannahsfavs" ? (
               <img
                 className="group"
                 src="https://previews.123rf.com/images/nyul/nyul1208/nyul120800329/14821374-group-of-happy-young-people-drinking-beer-having-fun-in-pub-laughing-.jpg"
@@ -142,9 +141,9 @@ function App() {
               </Content>
             </Layout>
             {window.location.pathname !== "/danielsfavs" ||
-              (window.location.pathname !== "hannahsfavs" && (
+              window.location.pathname !== "/hannahsfavs" && (
                 <Featured featured={featured} />
-              ))}
+              )}
             <Footer>Created by Daniel and Hannah 2022</Footer>
           </Layout>
         </Switch>
