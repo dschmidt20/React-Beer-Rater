@@ -15,6 +15,40 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hero-img {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('https://static.independent.co.uk/2021/01/09/10/iStock-1172481357.jpg?width=1200');
+  margin-bottom: 125px;
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+}
+
+.hero-content {
+  color: white;
+  font-size: 65px;
+  letter-spacing: 0px;
+  margin: 9% 11% 5px;
+  float: left;
+}
+
+.hero-content p {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
 .featured-carousel {
   display: block;
   width: 60%;
@@ -62,13 +96,8 @@ body {
 
 .card-details {
   margin-top: 25px;
-  margin-bottom: 40px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.beer-name {
-  margin-top: 10px;
-  display: block;
+  background-color: sienna;
 }
 
 .card img {
