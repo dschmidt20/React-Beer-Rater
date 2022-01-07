@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Button, Icon, Image } from 'semantic-ui-react'
+import { Card, Button, Image } from 'semantic-ui-react'
 import { VscChevronDown, VscChevronUp } from 'react-icons/vsc';
 
 function BeerCard({ beer, handleVoteClick }) {
@@ -16,7 +16,7 @@ function BeerCard({ beer, handleVoteClick }) {
                     width: '250px',
                 }}
             >
-                <img src={image} alt={name} />
+                <Image src={image} alt={name} />
                 <Card.Content>
                     <Card.Header
                         style={{
