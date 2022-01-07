@@ -54,7 +54,7 @@ function BeerCard({ beer, handleVoteClick }) {
                     extra 
                     style={{display: detailsToggle ? 'block' : 'none'}}    
                 >
-                    <h4 style={{textDecoration: 'overline', marginTop: '25px'}}>Specifications</h4>
+                    <h4 style={{textDecoration: 'overline', marginTop: '25px'}}>Specs</h4>
                     <p>Category: {category} </p>
                     <p>Region: {region}</p>
                     <p>ABV: {abv}%</p>

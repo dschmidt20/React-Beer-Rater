@@ -154,7 +154,7 @@ const BeerForm = ({ api, onAddBeer, beers }) => {
 
   return (
     <>
-    <h2 style={{textAlign:'center'}}>Find a delicious new beer? Share it with us!</h2>
+    <h2 style={{textAlign:'center', marginTop: '100px'}}>Find a delicious new beer?<br/> Share it with us!</h2>
     <Form
       className="beerForm"
       to="localhost.3000/thanks"

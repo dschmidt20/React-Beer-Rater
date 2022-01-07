@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Card, CardContent, CardDescription, CardHeader, Image, Popup, Rating } from "semantic-ui-react";
+import { Card, CardContent, CardDescription, CardHeader, Image, Popup } from "semantic-ui-react";
 
 const responsive = {
   desktop: {
@@ -12,9 +12,6 @@ const responsive = {
 };
 
 const Featured = ({ featured }) => {
-console.log(featured)
-    // const images = featured.map(beer => beer.image);
-    // const names = featured.map(beer => beer.name);
 
   return (
       <div style={{display: window.location.pathname === '/beerform' || window.location.pathname === '/thanks' ? 'none' : 'block'}} className="featured-carousel">
@@ -66,7 +63,7 @@ console.log(featured)
                         <Popup.Header
                             style={{color: '#342404'}}
                         >
-                                Specifications</Popup.Header>
+                                Specs</Popup.Header>
                         <Popup.Content>
                             <p
                                 style={{color: '#ce5e04'}}

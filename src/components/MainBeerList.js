@@ -13,9 +13,14 @@ function MainBeerList({ beers, handleVoteClick }) {
         )
     })
     return (
-        <div className='beerList'>
-            {beerElements}
-        </div>
+        <>
+            <div className='list-header'>
+                <h3>All of the Beers</h3>
+            </div>
+            <div className='beerList'>
+                {beerElements}
+            </div>
+        </>
     )
 }
 
