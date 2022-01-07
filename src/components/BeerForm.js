@@ -24,12 +24,14 @@ const BeerForm = ({ api, onAddBeer, beers }) => {
   });
 
   function handleChange(event) {
+    console.log('TEST: ', event, event.target.value);
     setFormData({
       ...formData,
-      [event.target.id]: event.target.value,
+      [event]: event,
     });
     console.log(event.target.value);
   }
+
   function handleSubmit() {
     // event.preventDefault();
 

@@ -58,7 +58,7 @@
       {
           "id": 6,
           "category": "Gose",
-          "name": "SeaQuench Ale Session Sour Beer",
+          "name": "SeaQuench Ale Session",
           "brewery": "Dogfish Head",
           "image": "https://products1.imgix.drizly.com/ci-dogfish-head-seaquench-ale-c7056bf271c9a4bd.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
           "region": "Delaware, United States",
@@ -330,12 +330,36 @@
         "category": "IPA",
         "name": "Pliny for President",
         "brewery": "Russian River",
-        "image": "https://www.russianriverbrewing.com/wp-content/uploads/2020/07/pliny-for-president-can2.png",
+        "image": "https://pbs.twimg.com/media/EeR1H16U8AA79eF.jpg",
         "region": "Sonoma County, CA, US",
         "abv": 8,
         "notes": "Pineapple, Grapefruit, Pine",
         "votes": 79,
         "daniel": 1
+      },
+      {
+        "id": 31,
+        "category": "Sour",
+        "name": "Victory Sour Monkey",
+        "brewery": "Victory Brewing Company",
+        "image": "https://static.specsonline.com/wp-content/uploads/2020/11/063027977632.jpg",
+        "region": "Pennsylvania, US",
+        "abv": 9.5,
+        "notes": "Tangy, Fruity, Tart",
+        "votes": 200,
+        "hannah": 1
+      },
+      {
+        "id": 32,
+        "category": "Sour",
+        "name": "Prairie Rainbow Sherbert",
+        "brewery": "Prairie Artisan Ales",
+        "image": "https://cdn.shopify.com/s/files/1/0227/0581/products/Prairie-Rainbow-Sherbet-12OZ-CAN_c232d8fd-35bf-498f-b2a2-34b6681a5809_620x.jpg?v=1596072802",
+        "region": "Pennsylvania, US",
+        "abv": 5.2,
+        "notes": "Fruity",
+        "votes": 100,
+        "hannah": 1
       }
     ]
   }

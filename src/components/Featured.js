@@ -37,12 +37,15 @@ const Featured = ({ featured }) => {
                             <Card
                                 style={{ 
                                     backgroundColor: 'white',
-                                    width: '250px',
+                                    width: '250px'
                                 }}
                             >
                                 <Image
                                     draggable={false}
-                                    style={{ width: "100%", height: "100%" }}
+                                    style={{ 
+                                        width: "100%", 
+                                        height: "300px"
+                                    }}
                                     src={beer.image}
                                 />
                                 <CardHeader

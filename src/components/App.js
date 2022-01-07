@@ -4,8 +4,7 @@ import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
 import FormSubmission from "./FormSubmission";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
-import { Layout } from "antd";
-import { Menu } from "antd";
+import { Layout, Menu, Affix } from "antd";
 import { AppstoreOutlined } from "@ant-design/icons";
 import Featured from "./Featured";
 import DanielsFavs from "./DanielsFavs";
@@ -14,7 +13,7 @@ import HeroHeader from "./HeroHeader";
 
 const { SubMenu } = Menu;
 
-const { Footer, Sider, Content, Header } = Layout;
+const { Footer, Sider, Header, Content } = Layout;
 
 const API = "http://localhost:3001/beers/";
 
@@ -24,6 +23,7 @@ function App() {
   const [featured, setFeatured] = useState([]);
   const [daniel, setDaniel] = useState([]);
   const [hannah, setHannah] = useState([]);
+  const [top, setTop] = useState(10);
 
   useEffect(() => {
     fetch(API)
