@@ -12,7 +12,7 @@ const responsive = {
 };
 
 const Featured = ({ featured }) => {
-
+console.log(featured)
     // const images = featured.map(beer => beer.image);
     // const names = featured.map(beer => beer.name);
 

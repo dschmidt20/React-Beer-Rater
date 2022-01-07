@@ -28,7 +28,7 @@ function BeerCard({ beer, handleVoteClick }) {
                         style={{
                             marginTop: '15px'
                         }}
-                    >{name}</Card.Header>
+                    ><strong>{name}</strong></Card.Header>
                 <Card.Meta
                     style={{
                         marginBottom: '15px'
