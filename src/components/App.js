@@ -84,7 +84,7 @@ function App() {
       <BrowserRouter forceRefresh={true}>
         <Switch>
           <Layout>
-          <HeroHeader />
+          {window.location.pathname === '/' && <HeroHeader />}
             {window.location.pathname === "/danielsfavs" ||
             window.location.pathname === "/hannahsfavs" ? (
               <img
@@ -94,11 +94,10 @@ function App() {
             ) : (
               <Featured featured={featured} />
             )}
-            <Layout>
-              <Affix offsetTop={top}>
-              <Sider style={{ background: "none", marginRight: '5px' }}>
-                <Menu style={{ background: "none" }} mode="inline">
-                  <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Links">
+              <Header style={{background: '#ce5f0448'}}>
+
+                <Menu style={{ background: "none" }} mode="horizontal">
+                  {/* <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Links"> */}
                     <Menu.Item key="5">
                       {" "}
                       <NavLink to="/">Home</NavLink>
@@ -107,19 +106,19 @@ function App() {
                       {" "}
                       <NavLink to="/beerform">Add New Beer</NavLink>
                     </Menu.Item>
-                    <SubMenu key="sub3" title="Favorite Beers">
+                    {/* <SubMenu key="sub3" title="Favorite Beers"> */}
                       <Menu.Item key="7">
-                        <NavLink to="/hannahsfavs">Hannah's Favorites</NavLink>{" "}
+                        <NavLink to="/hannahsfavs">Hannah's Favorites</NavLink>
                       </Menu.Item>
                       <Menu.Item key="8">
                         <NavLink to="/danielsfavs">Daniel's Favorites</NavLink>
                       </Menu.Item>
-                    </SubMenu>
-                  </SubMenu>
+                    {/* </SubMenu>
+                  </SubMenu> */}
                   {/* <NavBar /> */}
                 </Menu>
-              </Sider>
-              </Affix>
+              </Header>
+            <Layout>
               <Content>
                 <Route path="/danielsfavs">
                   <DanielsFavs daniel={daniel} />
