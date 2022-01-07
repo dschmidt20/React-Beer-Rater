@@ -4,16 +4,13 @@ import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
 import FormSubmission from "./FormSubmission";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
-import { Layout, Menu, Affix } from "antd";
-import { AppstoreOutlined } from "@ant-design/icons";
+import { Layout, Menu } from "antd";
 import Featured from "./Featured";
 import DanielsFavs from "./DanielsFavs";
 import HannahsFavs from "./HannahsFavs";
 import HeroHeader from "./HeroHeader";
 
-const { SubMenu } = Menu;
-
-const { Footer, Sider, Header, Content } = Layout;
+const { Footer, Header, Content } = Layout;
 
 const API = "http://localhost:3001/beers/";
 
@@ -23,7 +20,6 @@ function App() {
   const [featured, setFeatured] = useState([]);
   const [daniel, setDaniel] = useState([]);
   const [hannah, setHannah] = useState([]);
-  const [top, setTop] = useState(10);
 
   useEffect(() => {
     fetch(API)
@@ -94,7 +90,7 @@ function App() {
             ) : (
               <Featured featured={featured} />
             )}
-              <Header style={{background: '#ce5f0448'}}>
+              <Header style={{background: '#ce5f0448', marginTop: '50px'}}>
 
                 <Menu style={{ background: "none" }} mode="horizontal">
                   {/* <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Links"> */}
