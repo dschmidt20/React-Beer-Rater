@@ -13,7 +13,7 @@ import HeroHeader from "./HeroHeader";
 
 const { SubMenu } = Menu;
 
-const { Footer, Sider, Content } = Layout;
+const { Footer, Sider, Header, Content } = Layout;
 
 const API = "http://localhost:3001/beers/";
 
