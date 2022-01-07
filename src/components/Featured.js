@@ -48,7 +48,7 @@ console.log(featured)
                                 <CardHeader
                                     style={{paddingTop: '7px', color: '#342404'}}
                                 >
-                                    <p>{beer.name}</p>
+                                    <p><strong>{beer.name}</strong></p>
                                 </CardHeader>
                                 
                             </Card>
@@ -68,6 +68,7 @@ console.log(featured)
                             <p
                                 style={{color: '#ce5e04'}}
                             >
+                                {beer.brewery}<br/>
                                 {beer.category}<br/>
                                 {beer.region}<br/>
                                 {beer.abv}%<br/>
