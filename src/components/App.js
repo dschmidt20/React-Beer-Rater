@@ -2,7 +2,6 @@ import "../App.css";
 import React, { useEffect, useState } from "react";
 import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
-import LikedBeerList from "./LikedBeerList";
 import FormSubmission from "./FormSubmission";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 import { Layout } from "antd";
@@ -15,7 +14,7 @@ import HeroHeader from "./HeroHeader";
 
 const { SubMenu } = Menu;
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Footer, Sider, Content } = Layout;
 
 const API = "http://localhost:3001/beers/";
 
@@ -120,9 +119,6 @@ function App() {
                 </Menu>
               </Sider>
               <Content>
-                <Route path="/likedbeers">
-                  <LikedBeerList />
-                </Route>
                 <Route path="/danielsfavs">
                   <DanielsFavs daniel={daniel} />
                 </Route>

@@ -208,3 +208,9 @@ h5 {
   width: 450px;
   margin: auto;
 }
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+}
