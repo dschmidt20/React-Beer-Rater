@@ -131,7 +131,7 @@
         "region": "San Diego, United States",
         "abv": 6.4,
         "notes": "Citrus, Pine",
-        "votes": 75,
+        "votes": 81,
         "daniel": 1
       },
       {
@@ -264,7 +264,7 @@
         "region": "Czech Republic",
         "abv": 5.1,
         "notes": "Crisp, Dry, Grainy, Minerality",
-        "votes": 84
+        "votes": 88
       },
       {
         "id": 25,
@@ -322,7 +322,7 @@
         "region": "San Diego, CA, US",
         "abv": 6.7,
         "notes": "Citrusy, Hoppy",
-        "votes": 79,
+        "votes": 89,
         "daniel": 1
       },
       {
@@ -362,19 +362,7 @@
         "hannah": 1
       },
       {
-        "name": "Hazy .394",
-        "brewery": "Alesmith",
-        "category": "IPA",
-        "image": "https://alesmith.com/wp-content/uploads/2021/01/Hazy-394-16oz_web.png",
-        "abv": "6",
-        "region": "San Diego, CA, US",
-        "notes": "citrusy, hoppy",
-        "votes": 2,
-        "": "citrusy, hoppy",
-        "id": 33
-      },
-      {
-        "id": 34,
+        "id": 33,
         "category": "Gose",
         "name": "Boysenberry Sour",
         "brewery": "Helton Brewing Company",
@@ -386,7 +374,7 @@
         "hannah": 1
       },
       {
-        "id": 35,
+        "id": 34,
         "category": "Sour",
         "name": "Crush Cucumber Sour",
         "brewery": "10 Barrel Brewing",

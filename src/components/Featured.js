@@ -12,7 +12,7 @@ const responsive = {
 };
 
 const Featured = ({ featured }) => {
-
+console.log(featured)
   return (
       <div style={{display: window.location.pathname === '/beerform' || window.location.pathname === '/thanks' ? 'none' : 'block'}} className="featured-carousel">
           <div id='featured-header'>
