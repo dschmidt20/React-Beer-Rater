@@ -24,12 +24,11 @@ const BeerForm = ({ api, onAddBeer, beers }) => {
   });
 
   function handleChange(event) {
-    console.log('TEST: ', event, event.target.value);
     setFormData({
       ...formData,
-      [event]: event,
+      [event.target.name]: event.target.value,
+      [event.target.id]: event.target.value,
     });
-    console.log(event.target.value);
   }
 
   function handleSubmit() {
@@ -158,7 +157,7 @@ const BeerForm = ({ api, onAddBeer, beers }) => {
     <h2 style={{textAlign:'center'}}>Find a delicious new beer? Share it with us!</h2>
     <Form
       className="beerForm"
-      to="localhost.3000/thankyou"
+      to="localhost.3000/thanks"
       onFinish={handleSubmit}
       style={{margin: 'auto'}}
     >
@@ -168,7 +167,7 @@ const BeerForm = ({ api, onAddBeer, beers }) => {
         name="name"
         onChange={handleChange}
         value={formData.name}
-        rules={[{ required: true, message: "hey dumbass" }]}
+        rules={[{ required: true}]}
       >
         <Input style={{width: '85%'}} value={formData.name} required />
       </Form.Item>
@@ -251,13 +250,13 @@ const BeerForm = ({ api, onAddBeer, beers }) => {
       </Form.Item>
 
       <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-      <div className="space-align-block">
-      <Space align="center">
+      {/* <div className="space-align-block"> */}
+      {/* <Space align="center"> */}
         <Button type="primary" htmlType="submit">
           Submit
         </Button>
-        </Space>
-        </div>
+        {/* </Space> */}
+        {/* </div> */}
       </Form.Item>
     </Form>
 </>

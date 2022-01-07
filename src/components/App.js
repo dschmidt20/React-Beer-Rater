@@ -61,6 +61,7 @@ function App() {
     const featuredArray = beers.filter((beer) => beer.votes > avg + avg / 5);
 
     setFeatured([...featuredArray]);
+    console.log(avg+avg/5)
   }
 
   function handleDaniel() {
@@ -96,18 +97,18 @@ function App() {
                   {/* <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Links"> */}
                     <Menu.Item key="5">
                       {" "}
-                      <NavLink to="/">Home</NavLink>
+                      <NavLink to="/"><strong>Home</strong></NavLink>
                     </Menu.Item>
                     <Menu.Item key="6">
                       {" "}
-                      <NavLink to="/beerform">Add New Beer</NavLink>
+                      <NavLink to="/beerform"><strong>Add New Beer</strong></NavLink>
                     </Menu.Item>
                     {/* <SubMenu key="sub3" title="Favorite Beers"> */}
                       <Menu.Item key="7">
-                        <NavLink to="/hannahsfavs">Hannah's Favorites</NavLink>
+                        <NavLink to="/hannahsfavs"><strong>Hannah's Favorites</strong></NavLink>
                       </Menu.Item>
                       <Menu.Item key="8">
-                        <NavLink to="/danielsfavs">Daniel's Favorites</NavLink>
+                        <NavLink to="/danielsfavs"><strong>Daniel's Favorites</strong></NavLink>
                       </Menu.Item>
                     {/* </SubMenu>
                   </SubMenu> */}
