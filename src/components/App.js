@@ -11,6 +11,7 @@ import { AppstoreOutlined } from "@ant-design/icons";
 import Featured from "./Featured";
 import DanielsFavs from "./DanielsFavs";
 import HannahsFavs from "./HannahsFavs";
+import HeroHeader from "./HeroHeader";
 
 const { SubMenu } = Menu;
 
@@ -84,7 +85,7 @@ function App() {
       <BrowserRouter forceRefresh={true}>
         <Switch>
           <Layout>
-            <Header style={{ background: "none" }}>Header</Header>
+          <HeroHeader />
             {window.location.pathname === "/danielsfavs" ||
             window.location.pathname === "/hannahsfavs" ? (
               <img
