@@ -57,8 +57,8 @@
       },
       {
           "id": 6,
-          "category": "Gose/Sour Beer",
-          "name": "SeaQuench Ale Session",
+          "category": "Gose",
+          "name": "SeaQuench Ale Session Sour Beer",
           "brewery": "Dogfish Head",
           "image": "https://products1.imgix.drizly.com/ci-dogfish-head-seaquench-ale-c7056bf271c9a4bd.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
           "region": "Delaware, United States",
@@ -159,7 +159,7 @@
       {
           "id": 15,
           "category": "Hefeweizen",
-          "name": "Lovebird Wheat",
+          "name": "Lovebird Strawberry Raspberry Wheat",
           "brewery": "Jackalope",
           "image": "https://products0.imgix.drizly.com/ci-jackalope-love-bird-d47b902704ae5170.png?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
           "region": "Tennessee, United States",
@@ -276,6 +276,66 @@
           "abv": 5.35,
           "notes": "Bitter, Dry, Yeasty",
           "votes": 30
+      },
+      {
+        "id": 26,
+        "category": "Stout",
+        "name": "Three's Cocompany",
+        "brewery": "The Bruery",
+        "image": "https://cdn.shopify.com/s/files/1/0264/8054/1770/products/BAThreesCocompany_16oz_200x200.png?v=1630510569",
+        "region": "Anaheim, CA, US",
+        "abv": 13.5,
+        "notes": "coconut, vanilla beans, milk sugar, oat milk",
+        "votes": 30,
+        "daniel": 1
+      },
+      {
+        "id": 27,
+        "category": "Stout",
+        "name": "Black Tuesday",
+        "brewery": "The Bruery",
+        "image": "http://cdn.shopify.com/s/files/1/0264/8054/1770/products/BlackTuesday_16oz_2021_1024x1024.png?v=1632764500",
+        "region": "Anaheim, CA, US",
+        "abv": 18.9,
+        "notes": "Boozy, Creme Brulee, Figs, Malted Milk Balls",
+        "votes": 44,
+        "daniel": 1
+      },
+      {
+        "id": 28,
+        "category": "Stout",
+        "name": "Nucular Strategery",
+        "brewery": "Fall Brewing",
+        "image": "https://cdn.shopify.com/s/files/1/0227/0581/products/Fall-Nucular-Strategery-12OZ-BTL_26dbce32-5551-47b1-a6be-65c9bafddf7d_620x.png?v=1531726543",
+        "region": "San Diego, CA, US",
+        "abv": 8.5,
+        "notes": "Coconut, Rum, Chocolate",
+        "votes": 49,
+        "daniel": 1
+      },
+      {
+        "id": 29,
+        "category": "IPA",
+        "name": "Tangerine Express",
+        "brewery": "Stone Brewing",
+        "image": "http://cdn.shopify.com/s/files/1/0561/1906/6799/products/tangx_shopify_can_1200x1200.png?v=1630445096",
+        "region": "San Diego, CA, US",
+        "abv": 6.7,
+        "notes": "Citrusy, Hoppy",
+        "votes": 79,
+        "daniel": 1
+      },
+      {
+        "id": 30,
+        "category": "IPA",
+        "name": "Pliny for President",
+        "brewery": "Russian River",
+        "image": "https://www.russianriverbrewing.com/wp-content/uploads/2020/07/pliny-for-president-can2.png",
+        "region": "Sonoma County, CA, US",
+        "abv": 8,
+        "notes": "Pineapple, Grapefruit, Pine",
+        "votes": 79,
+        "daniel": 1
       }
     ]
   }

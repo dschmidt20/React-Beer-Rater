@@ -2,7 +2,6 @@ import "../App.css";
 import React, { useEffect, useState } from "react";
 import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
-import LikedBeerList from "./LikedBeerList";
 import FormSubmission from "./FormSubmission";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 import { Layout } from "antd";
@@ -84,7 +83,7 @@ function App() {
       <BrowserRouter forceRefresh={true}>
         <Switch>
           <Layout>
-            <Header style={{ background: "none" }}>Header</Header>
+            <Header style={{ background: "none" }}></Header>
             {window.location.pathname === "/danielsfavs" ||
             window.location.pathname === "/hannahsfavs" ? (
               <img
@@ -119,9 +118,6 @@ function App() {
                 </Menu>
               </Sider>
               <Content>
-                <Route path="/likedbeers">
-                  <LikedBeerList />
-                </Route>
                 <Route path="/danielsfavs">
                   <DanielsFavs daniel={daniel} />
                 </Route>
@@ -129,7 +125,7 @@ function App() {
                   <HannahsFavs hannah={hannah} />
                 </Route>
                 <Route path="/beerform">
-                  <BeerForm onAddBeer={handleAddBeer} api={API} />
+                  <BeerForm onAddBeer={handleAddBeer} beers={beers} api={API} />
                 </Route>
                 <Route path="/thanks" component={FormSubmission} />
                 <Route exact path="/">
