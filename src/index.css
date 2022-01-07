@@ -72,11 +72,17 @@ body {
   grid-gap: 30px;
   border-radius: 30px;
   box-shadow: 0px 0px 3px 4px #ce5f0448;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-right: 10%;
   margin-bottom: 100px;
   padding: 100px;
   margin-left: 10%;
+}
+
+.list-header {
+  text-align: center;
+  margin-top: 75px;
+  font-size: x-large;
 }
 
 .container {
@@ -107,12 +113,6 @@ body {
   height: 300px;
 }
 
- Menu {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 button {
   border-radius: 5px;
   padding: 4px 10px;
@@ -140,7 +140,6 @@ p {
   width: 60%;
   clear: both;
   border-radius: 3px;
-  /* margin: auto; */
   padding: 10px;
 }
 
@@ -200,27 +199,39 @@ h5 {
   border-radius: 0;
   box-shadow: none;
 }
-.group{
-  width: 450px;
+.group {
+  width: fit-content;
+  height: fit-content;
+  background-position: center;
   margin: auto;
 }
 
 footer {
+  margin-top: 150px;
   text-align: center;
 }
 
 .hannah-about {
-  background-color: slateblue;
-  margin: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  border-top-style: groove;
 }
 
 .hannah-header {
-  background-color: springgreen;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 50px;
 }
 
 .hannah-content {
-  padding: 50px 100px 0px;
-  background-color: sienna;
+  padding: 25px 65px 0px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 80px;
+  font-size: medium;
+  text-align: center;
 }
 
 .ant-layout-header{
@@ -234,7 +245,7 @@ footer {
   width: 15%;
   text-align: center;
 }
-.ant-input{
+.ant-input {
   width: 85%;
 }
 .space-align-block {
@@ -242,7 +253,7 @@ footer {
   margin: 8px 20%;
   padding: 4px;
 }
-.cheersPic{
+.cheersPic {
   width: 700px;
   margin-left: 33%;
 }

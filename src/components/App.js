@@ -85,7 +85,7 @@ function App() {
             window.location.pathname === "/hannahsfavs" ? (
               <img
                 className="group"
-                src="https://previews.123rf.com/images/nyul/nyul1208/nyul120800329/14821374-group-of-happy-young-people-drinking-beer-having-fun-in-pub-laughing-.jpg"
+                src="https://loveincorporated.blob.core.windows.net/contentimages/main/31b9d195-01d5-4d75-93ef-5305a4063ce1-best-alcohol-free-beers.jpg"
               />
             ) : (
               <Featured featured={featured} />
@@ -117,10 +117,10 @@ function App() {
             <Layout>
               <Content>
                 <Route path="/danielsfavs">
-                  <DanielsFavs daniel={daniel} />
+                  <DanielsFavs daniel={daniel} handleVoteClick={handleVoteClick} />
                 </Route>
                 <Route path="/hannahsfavs">
-                  <HannahsFavs hannah={hannah} />
+                  <HannahsFavs hannah={hannah} handleVoteClick={handleVoteClick} />
                 </Route>
                 <Route path="/beerform">
                   <BeerForm onAddBeer={handleAddBeer} beers={beers} api={API} />

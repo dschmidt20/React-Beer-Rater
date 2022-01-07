@@ -360,6 +360,30 @@
         "notes": "Fruity",
         "votes": 100,
         "hannah": 1
+      },
+      {
+        "id": 33,
+        "category": "Gose",
+        "name": "Boysenberry Sour",
+        "brewery": "Helton Brewing Company",
+        "image": "https://images.freshop.com/00000001314212/f70fbabfff504eefaad474546635c1a2_large.png",
+        "region": "Arizona, US",
+        "abv": 6.7,
+        "notes": "Tart, Fruity",
+        "votes": 184,
+        "hannah": 1
+      },
+      {
+        "id": 34,
+        "category": "Sour",
+        "name": "Crush Cucumber Sour",
+        "brewery": "10 Barrel Brewing",
+        "image": "https://cdn.shopify.com/s/files/1/0057/8089/7892/products/10BarrelCrushCucumber_1024x1024@2x.jpg?v=1590179789",
+        "region": "Arizona, US",
+        "abv": 5,
+        "notes": "Sour, Crisp",
+        "votes": 145,
+        "hannah": 1
       }
     ]
   }
