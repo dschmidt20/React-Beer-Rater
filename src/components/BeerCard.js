@@ -4,8 +4,14 @@ import { VscChevronDown, VscChevronUp } from 'react-icons/vsc';
 
 function BeerCard({ beer, handleVoteClick }) {
     const [detailsToggle, setDetailsToggle] = useState(false);
+    const [voted, setVoted] = useState(false);
     
     const { id, image, name, brewery, category, votes, notes, region, abv } = beer;
+
+    function handleVClick(e, votes) {
+        handleVoteClick(e, votes);
+        setVoted(true);
+    }
 
 
     return (
@@ -31,13 +37,15 @@ function BeerCard({ beer, handleVoteClick }) {
                     <Button
                         style={{float: 'left'}}
                         id={id} 
-                        vote={votes} 
-                        onClick={() => handleVoteClick(id, votes)}
-                    >Vote</Button>
+                        votes={votes} 
+                        onClick={() => handleVClick(id, votes)}
+                    >
+                        {voted ? 'Voted!' : 'Vote'}
+                    </Button>
                     <Button 
                         style={{float: 'right'}} 
                         id={id} 
-                        vote={votes} 
+                        votes={votes} 
                         onClick={() => setDetailsToggle(!detailsToggle)}
                     >{detailsToggle ? <VscChevronUp/> : <VscChevronDown/>}</Button>
                 </Card.Content>

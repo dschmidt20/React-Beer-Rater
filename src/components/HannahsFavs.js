@@ -28,8 +28,8 @@ function HannahsFavs({ hannah }) {
 
       <h1 style={{fontSize: '35pt',paddingTop:'30px'}}>
         Check out Hannah's Favorite Beers!
-        <div className="beerList">{hannahsBeers}</div>
       </h1>
+        <div className="beerList">{hannahsBeers}</div>
     </>
   );
 }
