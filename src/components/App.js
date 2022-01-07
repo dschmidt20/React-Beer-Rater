@@ -126,7 +126,7 @@ function App() {
                   <HannahsFavs hannah={hannah} />
                 </Route>
                 <Route path="/beerform">
-                  <BeerForm onAddBeer={handleAddBeer} api={API} />
+                  <BeerForm onAddBeer={handleAddBeer} beers={beers} api={API} />
                 </Route>
                 <Route path="/thanks" component={FormSubmission} />
                 <Route exact path="/">
