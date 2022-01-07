@@ -4,8 +4,7 @@ import MainBeerList from "./MainBeerList";
 import BeerForm from "./BeerForm";
 import FormSubmission from "./FormSubmission";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
-import { Layout } from "antd";
-import { Menu } from "antd";
+import { Layout, Menu, Affix } from "antd";
 import { AppstoreOutlined } from "@ant-design/icons";
 import Featured from "./Featured";
 import DanielsFavs from "./DanielsFavs";
@@ -24,6 +23,7 @@ function App() {
   const [featured, setFeatured] = useState([]);
   const [daniel, setDaniel] = useState([]);
   const [hannah, setHannah] = useState([]);
+  const [top, setTop] = useState(10);
 
   useEffect(() => {
     fetch(API)
@@ -95,7 +95,8 @@ function App() {
               <Featured featured={featured} />
             )}
             <Layout>
-              <Sider style={{ background: "none" }}>
+              <Affix offsetTop={top}>
+              <Sider style={{ background: "none", marginRight: '5px' }}>
                 <Menu style={{ background: "none" }} mode="inline">
                   <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Links">
                     <Menu.Item key="5">
@@ -118,6 +119,7 @@ function App() {
                   {/* <NavBar /> */}
                 </Menu>
               </Sider>
+              </Affix>
               <Content>
                 <Route path="/danielsfavs">
                   <DanielsFavs daniel={daniel} />
