@@ -3,14 +3,16 @@ import { Form, Input, Button, Select } from "antd";
 
 const BeerForm = ({ api, onAddBeer, beers }) => {
   // function BeerForm({ onAddBeer, api }) {
-  //   // const [isChecked, setIsChecked] = useState(true);
-  console.log(beers)
-  const mappedCategories = beers.map(beer => {
-    return (
-        <Select.Option value={beer.category}> {beer.category} </Select.Option>
-    )
-})
-console.log(mappedCategories)
+    // const [isChecked, setIsChecked] = useState(true);
+//   console.log('Beers: ', beers)
+
+//   const mappedCategories = beers.map(beer => {
+//     return (
+//       console.log(beer.category)
+//         // <Select.Option key={beer.id} value={beer.category}> {beer.category} </Select.Option>
+//     )
+// })
+// console.log('Mapped Categories: ', mappedCategories)
 
   const [formData, setFormData] = useState({
     name: "",
@@ -24,13 +26,13 @@ console.log(mappedCategories)
   });
 
   function handleChange(event) {
+    console.log('TEST: ', event, event.target.value);
     setFormData({
       ...formData,
-      [event.target.id]: event.target.value,
+      [event]: event,
     });
-    console.log(event.target.value);
-    console.log(event.target)
   }
+
   function handleSubmit() {
     // event.preventDefault();
 
@@ -181,8 +183,22 @@ console.log(mappedCategories)
         <Input />
       </Form.Item>
       <Form.Item label="Category">
-        <Select>
-          {mappedCategories}
+        <Select onChange={(e) => handleChange(e)}>
+          {/* {mappedCategories} */}
+
+          <Select.Option key="blank">-Select One-</Select.Option>
+          <Select.Option value='Stout' key="Stout">Stout</Select.Option>
+          <Select.Option value='IPA' className="IPA">IPA</Select.Option>
+          <Select.Option value='Gose' key="Gose">Gose</Select.Option>
+          <Select.Option value='Sour' key="Sour">Sour/Wild Ale</Select.Option>
+          <Select.Option value='Pilsner' key="Pilsner">Pilsner</Select.Option>
+          <Select.Option value='Hefeweizen' key="Hefeweizen">Hefeweizen</Select.Option>
+          <Select.Option value='Porter' key="Porter">Porter</Select.Option>
+          <Select.Option value='Seasonal' key="Seasonal">Seasonal</Select.Option>
+          <Select.Option value='Witbier' key="Witbier">Witbier</Select.Option>
+          <Select.Option value='Berliner' key="Berliner">Berliner</Select.Option>
+          <Select.Option value='Wheat' key="Wheat">Wheat</Select.Option>
+
         </Select>
       </Form.Item>
       <Form.Item

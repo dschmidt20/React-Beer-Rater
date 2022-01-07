@@ -5,19 +5,11 @@ function NavBar() {
     // console.log(window.location.pathname)
   return (
     <nav>
-     {/* { window.location.pathname === '/likedbeers' ? null :  */}
-        
-        <NavLink to="/likedbeers">Liked</NavLink>
-        <br/>
-      
-    {/* }  */}
-     
+     {/* { window.location.pathname === '/likedbeers' ? null :  */}     
 
       <NavLink to="/beerform">Add New Beer</NavLink>
-      <br/>
-      
+      <br/> 
      
-
       <NavLink to="/">Home</NavLink>
       <br/>
     </nav>
