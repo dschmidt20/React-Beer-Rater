@@ -15,7 +15,7 @@ function BeerCard({ beer, handleVoteClick }) {
 
 
     return (
-        <div className="container">
+        <div className="beer-card-container">
             <Card
                 style={{
                     backgroundColor: 'white',

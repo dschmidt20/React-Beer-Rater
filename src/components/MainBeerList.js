@@ -13,14 +13,14 @@ function MainBeerList({ beers, handleVoteClick }) {
         )
     })
     return (
-        <>
-            <div className='list-header'>
-                <h3>All of the Beers</h3>
+        <div id='beer-list-container'>
+            <div>
+                <h2 id='beers-list-header'>All of the Beers</h2>
             </div>
             <div className='beerList'>
                 {beerElements}
             </div>
-        </>
+        </div>
     )
 }
 

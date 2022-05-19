@@ -91,11 +91,11 @@ function App() {
             ) : (
               <Featured featured={featured} />
             )}
-              <Header style={{background: '#ce5f0448', marginTop: '50px'}}>
+              <Header style={{ background: '#d7d7d7', paddingTop: '60px', paddingBottom: '125px' }}>
 
-                <Menu style={{ background: "none" }} mode="horizontal">
+                <Menu style={{ background: '#d7d7d7', borderBottom: '#d7d7d7' }} mode="horizontal">
                   {/* <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Links"> */}
-                    <Menu.Item key="5">
+                    <Menu.Item key='5'>
                       {" "}
                       <NavLink to="/"><strong>Home</strong></NavLink>
                     </Menu.Item>
@@ -138,7 +138,7 @@ function App() {
             {window.location.pathname === "/danielsfavs" ||
               window.location.pathname === "/hannahsfavs" ? <Featured featured={featured}  /> : null
               }
-            <Footer>Created by Daniel and Hannah 2022</Footer>
+            <Footer>Copyright &copy; Daniel & Hannah 2022</Footer>
           </Layout>
         </Switch>
       </BrowserRouter>
