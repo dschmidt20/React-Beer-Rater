@@ -15,8 +15,8 @@ const Featured = ({ featured }) => {
 console.log(featured)
   return (
       <div style={{display: window.location.pathname === '/beerform' || window.location.pathname === '/thanks' ? 'none' : 'block'}} className="featured-carousel">
-          <div id='featured-header'>
-              <h4>The Best Beers</h4>
+          <div>
+              <h2>The Best Beers</h2>
           </div>
         <Carousel
             className="carousel"

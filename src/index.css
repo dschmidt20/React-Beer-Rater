@@ -15,6 +15,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* * FONTS */
+
+p {
+  font-size: small;
+}
+
+a {
+  text-align: center;
+}
+
+h1 {
+  clear: both;
+  text-align: center;
+}
+
+h2 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 80px;
+}
+
+#beers-list-header {
+  color: #d7d7d7;
+}
+
+h5 {
+  margin: 0px;
+}
+
+.cheers h1 {
+  font-size: 30pt;
+}
+
+/* * HERO */
+
 .hero-img {
   height: 100vh;
   width: 100vw;
@@ -22,7 +59,6 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   background-image: url('https://static.independent.co.uk/2021/01/09/10/iStock-1172481357.jpg?width=1200');
-  margin-bottom: 125px;
 }
 
 .overlay {
@@ -39,7 +75,7 @@ body {
   color: white;
   font-size: 65px;
   letter-spacing: 0px;
-  margin: 9% 9% 5px;
+  margin: 9% 9%;
   float: left;
 }
 
@@ -49,16 +85,13 @@ body {
   text-align: center;
 }
 
+/* * FEATURED */
+
 .featured-carousel {
   display: block;
   width: 60%;
   margin-left: 20%;
-}
-
-#featured-header {
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: x-large;
+  margin-bottom: 150px;
 }
 
 .carousel {
@@ -66,26 +99,27 @@ body {
   border-radius: 10px;
 }
 
+/* * BEER LIST */
+
+#beer-list-container {
+  background-size: cover;
+  background-color: #161f1f;
+  padding-bottom: 100px;
+}
+
 .beerList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 75px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 60px;
   border-radius: 30px;
-  box-shadow: 0px 0px 3px 4px #ce5f0448;
-  margin-top: 50px;
-  margin-right: 10%;
-  margin-bottom: 100px;
-  padding: 100px;
-  margin-left: 10%;
+  box-shadow: 0px 0px 3px 4px #348fea;
+  margin: 50px 10% 100px 10%;
+  padding: 125px;
 }
 
-.list-header {
-  text-align: center;
-  margin-top: 75px;
-  font-size: x-large;
-}
+/* * BEER CARDS */
 
-.container {
+.beer-card-container {
   max-width: 300px;
   margin: 0 auto;
   margin-top: 20px;
@@ -104,7 +138,7 @@ body {
 .card-details {
   margin-top: 25px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  background-color: sienna;
+  background-color: #348fea;
 }
 
 .card img {
@@ -132,15 +166,22 @@ button {
   box-shadow: 0px 0px 5px 2px #d7d7d7;
 }
 
-p {
-  font-size: small;
-}
+/* * FORM/FORM SUBMISSION */
 
 .beerForm {
   width: 60%;
   clear: both;
   border-radius: 3px;
   padding: 10px;
+}
+
+.formHolder {
+  clear: both;
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px 4px #348fea;
+  margin: auto;
+  padding: 10px;
+  width: 45%;
 }
 
 input {
@@ -151,64 +192,38 @@ input {
   text-align: center;
 }
 
-h1 {
-  clear: both;
+.ant-form-item-label{
+  width: 15%;
   text-align: center;
 }
-
-a {
-  text-align: center;
-}
-
-h4 {
-  margin: 0px;
-}
-
-h5 {
-  margin: 0px;
-}
-
-.formHolder {
-  clear: both;
-  border-radius: 30px;
-  box-shadow: 0px 0px 3px 4px #ce5f0448;
-  margin: auto;
-  padding: 10px;
-  width: 45%;
+.ant-input {
+  width: 85%;
 }
 
 .cheers {
   clear: both;
   border-radius: 30px;
-  box-shadow: 0px 0px 3px 4px #ce5f0448;
+  box-shadow: 0px 0px 3px 4px #348fea;
   margin-left: 40%;
   margin-right: 40%;
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 100px;
   text-align: center;
+}
 
+.cheersPic {
+  width: 700px;
+  margin-left: 33%;
 }
-.cheers h1 {
-  font-size: 30pt;
-}
-.ant-menu-sub.ant-menu-inline {
-  padding: 0;
-  border: 0;
-  width: fit-content;
-  border-radius: 0;
-  box-shadow: none;
-}
+
+/* * HANNAH */
+
 .group {
   width: fit-content;
   height: fit-content;
   background-position: center;
   margin: auto;
-}
-
-footer {
-  margin-top: 150px;
-  text-align: center;
 }
 
 .hannah-about {
@@ -234,26 +249,32 @@ footer {
   text-align: center;
 }
 
-.ant-layout-header{
-  margin: auto;
-  width: 50%;
+/* * HEADER/NAVIGATION BAR */
+
+.ant-menu-sub.ant-menu-inline {
+  padding: 0;
+  border: 0;
+  width: fit-content;
+  border-radius: 0;
+  box-shadow: none;
 }
-.ant-layout-header .ant-menu{
-  margin-left: 18%;
+
+.ant-layout-header .ant-menu {
+  padding-left: 28%;
+  width: 100%;
+  font-size: 35px;
+  font-weight: 400;
 }
-.ant-form-item-label{
-  width: 15%;
-  text-align: center;
-}
-.ant-input {
-  width: 85%;
-}
+
 .space-align-block {
   flex: none;
   margin: 8px 20%;
   padding: 4px;
 }
-.cheersPic {
-  width: 700px;
-  margin-left: 33%;
+
+/* * FOOTER */
+
+footer {
+  margin: 150px 0 50px 0;
+  text-align: center;
 }
